@@ -1,6 +1,8 @@
 import React from "react";
 import { Provider } from "react-redux";
 import ReactDOM from "react-dom";
+import { ThemeProvider } from "@emotion/react";
+import theme from "@rebass/preset";
 
 import configureStore from "./store/configureStore";
 import "./index.css";
@@ -13,7 +15,9 @@ const store = configureStore(initialState);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Main />
+      <ThemeProvider theme={theme}>
+        <Main />
+      </ThemeProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

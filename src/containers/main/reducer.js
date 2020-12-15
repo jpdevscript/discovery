@@ -1,16 +1,28 @@
 import produce from "immer";
 import { handleActions } from "redux-actions";
 
-import { firstAction } from "./actions";
+import {
+  receivedSpaceXData,
+  erroredSpaceXData,
+  displayLoading,
+} from "./actions";
 
 export const initialState = {
-  tempState: "",
+  spaceXData: {},
+  spaceXError: "",
+  loader: false,
 };
 
 const mainReducer = handleActions(
   {
-    [firstAction().type]: produce((draft, action) => {
-      draft.tempState = action.payload;
+    [receivedSpaceXData().type]: produce((draft, action) => {
+      draft.spaceXData = action.payload;
+    }),
+    [erroredSpaceXData().type]: produce((draft, action) => {
+      draft.spaceXError = action.payload;
+    }),
+    [displayLoading().type]: produce((draft, action) => {
+      draft.loader = action.payload;
     }),
   },
   initialState

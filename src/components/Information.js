@@ -21,7 +21,7 @@ const Information = () => {
         managing side effects
       </ItalicText>
       <ItalicText>* For state-immutable used immer</ItalicText>
-      <ItalicText>* Used generator fuction in redux-saga</ItalicText>
+      <ItalicText>* Used generator function in redux-saga</ItalicText>
       <ItalicText>
         * Handle success response & error in services as well in saga for
         fetching SpaceX API

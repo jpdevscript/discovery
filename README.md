@@ -14,7 +14,7 @@ For run Project:
 - Responsive UI for mobile & desktop
 - Used redux, redux-actions, redux-saga for state management, actions & managing side effects
 - For state-immutable used immer
-- Used generator fuction in redux-saga
+- Used generator function in redux-saga
 - Handle success response & error in services as well in saga for fetching SpaceX API
 - Display loader while fetch request is on
 - Display details & image from fetched API or error message if failed

@@ -5,7 +5,7 @@ For run Project:
 - yarn install
 - yarn start ( & browse @ http://localhost:3000)
 
-#### Information
+#### Features
 
 - All input fields are validated for required
 - Age field validated for number, at-least 18 years of age to call SpaceX api
